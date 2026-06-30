@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kikis.algo — Handmade Jewellery & Trinkets</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">kikis<span class="dot">.</span>algo</a>
+  <ul class="nav-links">
+    <li><a href="#shop">Shop</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#insta">Follow</a></li>
+  </ul>
+  <button class="nav-cart" onclick="showToast('Opening cart...')">
+    Cart <span class="cart-dot" id="cart-count">0</span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <span class="hero-eyebrow">customs open ✶ DM to order</span>
+    <h1 class="hero-title">handmade charms<br>for your <span class="pop">whole</span> personality</h1>
+    <p class="hero-desc">Custom mini-me dolls, fandom keychains, beaded charms & trinkets — made by hand, made for you. From your favorite character to your actual face.</p>
+    <div class="hero-ctas">
+      <a href="#shop" class="btn-primary">Shop the drop</a>
+      <a href="#insta" class="btn-ghost">See on Instagram →</a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="sticker-card card-1"><div class="sticker-img">🧸</div></div>
+    <div class="sticker-card card-2"><div class="sticker-img">⛓️</div></div>
+    <div class="sticker-card card-3"><div class="sticker-img">🎀</div></div>
+    <div class="badge-spin">100%<br>hand<br>made</div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track" id="marquee">
+    <span>Custom Mini-Me Dolls</span><span class="dot">✶</span>
+    <span>Fandom Keychains</span><span class="dot">✶</span>
+    <span>Beaded Charms</span><span class="dot">✶</span>
+    <span>DM To Order</span><span class="dot">✶</span>
+    <span>Advance Payment Only</span><span class="dot">✶</span>
+    <span>Custom Mini-Me Dolls</span><span class="dot">✶</span>
+    <span>Fandom Keychains</span><span class="dot">✶</span>
+    <span>Beaded Charms</span><span class="dot">✶</span>
+    <span>DM To Order</span><span class="dot">✶</span>
+    <span>Advance Payment Only</span><span class="dot">✶</span>
+  </div>
+</div>
+
+<!-- ABOUT STRIP -->
+<section class="about-strip" id="about">
+  <div class="about-item">
+    <div class="about-icon">✂️</div>
+    <div class="about-title">Fully Custom</div>
+    <div class="about-desc">Send a face, a character, a vibe — it gets handmade into a doll or charm just for you.</div>
+  </div>
+  <div class="about-item">
+    <div class="about-icon">🪡</div>
+    <div class="about-title">Made With Craft</div>
+    <div class="about-desc">Every piece is hand-stitched and hand-beaded. No two customs come out the same.</div>
+  </div>
+  <div class="about-item">
+    <div class="about-icon">💌</div>
+    <div class="about-title">DM To Order</div>
+    <div class="about-desc">Customs are currently open. Slide into the DMs with your idea and let's make it real.</div>
+  </div>
+</section>
+
+<!-- SHOP -->
+<section id="shop">
+  <div class="section-header">
+    <div>
+      <div class="section-eyebrow">the shop</div>
+      <h2 class="section-title">Browse the Collection</h2>
+    </div>
+    <a href="#" class="section-link">View all pieces →</a>
+  </div>
+
+  <div class="filter-tabs">
+    <button class="filter-tab active" data-filter="all">All</button>
+    <button class="filter-tab" data-filter="dolls">Dolls</button>
+    <button class="filter-tab" data-filter="charms">Charms</button>
+    <button class="filter-tab" data-filter="accessories">Accessories</button>
+  </div>
+
+  <div class="product-grid" id="product-grid"></div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="testimonial-section">
+  <p class="testimonial-label">customer love</p>
+  <blockquote class="testimonial-quote">"My mini-me doll is literally me in plushie form, I cried a little. The detail is insane for handmade."</blockquote>
+  <p class="testimonial-author">— a very happy customer</p>
+</section>
+
+<!-- INSTAGRAM -->
+<section class="insta-section" id="insta">
+  <div class="section-header">
+    <div>
+      <div class="section-eyebrow">@kikis.algo</div>
+      <h2 class="section-title">Follow Along</h2>
+    </div>
+    <a href="https://instagram.com/kikis.algo" class="section-link" target="_blank">Open Instagram →</a>
+  </div>
+  <div class="insta-grid">
+    <div class="insta-item" style="background:#C9B8FF;">🧸</div>
+    <div class="insta-item" style="background:#FF4D8D;">⛓️</div>
+    <div class="insta-item" style="background:#FFD93D;">🗡️</div>
+    <div class="insta-item" style="background:#C9B8FF;">🍙</div>
+    <div class="insta-item" style="background:#FF4D8D;">🔖</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand-name">kikis.algo</div>
+      <p class="footer-brand-desc">Handmade jewellery & trinkets — custom dolls, charms, and keychains made one stitch at a time.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Shop</div>
+      <ul class="footer-links">
+        <li><a href="#">Dolls</a></li>
+        <li><a href="#">Charms</a></li>
+        <li><a href="#">Accessories</a></li>
+        <li><a href="#">Custom Orders</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Connect</div>
+      <ul class="footer-links">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">YouTube</a></li>
+        <li><a href="#">WhatsApp</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 kikis.algo</span>
+    <span>handmade with <span class="footer-pink">♥</span></span>
+  </div>
+</footer>
+
+<!-- TOAST -->
+<div class="cart-toast" id="toast">Added to cart ✓</div>
+
+<script src="script.js"></script>
+</body>
+</html>
